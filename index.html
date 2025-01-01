@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center><h1 class="heading">Welcome to Simple Calculator!</h1></center><br>
+  <center><p class="text">This is a Simple Calculator created using HTML, CSS and Java Script.</p></center>
+    <br/><center><div class="calculator">
+      
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button onclick="appendValue('+')" class="operator">+</button>
+      <button onclick="clearDisplay()" class="s-operator">C</button>
+      <button onclick="backspace()" class="s-operator">⌫</button>
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('-')" class="operator">-</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('*')" class="operator">*</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('/')" class="operator">/</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('.')" class="operator">.</button>
+      <button onclick="calculateResult()" class="equal">=</button>
+      
+    </div>
+    
+  </div></center><br/>
+  <div id="history">
+    <h2>History🕰️</h2>
+    <!--this will display the last three calculation histories-->
+    <p id="history1"></p>
+    <p id="history2"></p>
+    <p id="history3"></p>
+    <p id="history4"></p>
+    <p id="history5"></p>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
